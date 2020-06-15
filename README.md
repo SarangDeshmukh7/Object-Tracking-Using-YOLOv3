@@ -52,3 +52,14 @@ Parameters for cv2.VideoWriter():
     isColor	- If it True, the encoder will expect and encode colour frames.
 """
 
+# Detecting Objects in Real Time with OpenCV deep learning library
+
+Algorithm:
+Reading stream video from camera --> Loading YOLO v3 Network -->
+--> Reading frames in the loop --> Getting blob from the frame -->
+--> Implementing Forward Pass --> Getting Bounding Boxes -->
+--> Non-maximum Suppression --> Drawing Bounding Boxes with Labels -->
+--> Showing processed frames in OpenCV Window
+
+Result:
+Window with Detected Objects, Bounding Boxes and Labels in Real Time
