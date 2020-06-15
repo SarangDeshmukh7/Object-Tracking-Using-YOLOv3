@@ -63,3 +63,15 @@ Reading stream video from camera --> Loading YOLO v3 Network -->
 
 Result:
 Window with Detected Objects, Bounding Boxes and Labels in Real Time
+
+
+"""
+Some comments
+
+cv2.VideoCapture(0)
+
+To capture video, it is needed to create VideoCapture object.
+Its argument can be camera's index or name of video file.
+Camera index is usually 0 for built-in one.
+Try to select other cameras by passing 1, 2, 3, etc.
+"""
