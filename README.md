@@ -1,6 +1,6 @@
 # Object-Tracking-using-YOLOv3
 
-Detecting Objects on Image with OpenCV deep learning library
+# Detecting Objects on Image with OpenCV deep learning library
 
 Algorithm:
 Reading RGB image --> Getting Blob --> Loading YOLO v3 Network -->
@@ -21,5 +21,34 @@ normalizing, and RB channels swapping. Resulted shape has:
  - width
  - height
 E.G.: blob = cv2.dnn.blobFromImage(image, scalefactor=1.0, size, mean, swapRB=True)
+"""
+
+# Detecting Objects on Video with OpenCV deep learning library
+
+Algorithm:
+Reading input video --> Loading YOLO v3 Network -->
+--> Reading frames in the loop --> Getting blob from the frame -->
+--> Implementing Forward Pass --> Getting Bounding Boxes -->
+--> Non-maximum Suppression --> Drawing Bounding Boxes with Labels -->
+--> Writing processed frames
+
+Result:
+New video file with Detected Objects, Bounding Boxes and Labels
+
+"""
+Some comments
+
+What is a FOURCC?
+    FOURCC is short for "four character code" - an identifier for a video codec,
+    compression format, colour or pixel format used in media files.
+    http://www.fourcc.org
+
+
+Parameters for cv2.VideoWriter():
+    filename - Name of the output video file.
+    fourcc - 4-character code of codec used to compress the frames.
+    fps	- Frame rate of the created video.
+    frameSize - Size of the video frames.
+    isColor	- If it True, the encoder will expect and encode colour frames.
 """
 
