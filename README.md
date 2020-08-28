@@ -1,6 +1,6 @@
 # Object-Tracking-using-YOLOv3
 
-# Detecting Objects on Image with OpenCV deep learning library
+### Detecting Objects on Image with OpenCV deep learning library
 
 Algorithm:
 Reading RGB image --> Getting Blob --> Loading YOLO v3 Network -->
@@ -23,7 +23,7 @@ normalizing, and RB channels swapping. Resulted shape has:
 E.G.: blob = cv2.dnn.blobFromImage(image, scalefactor=1.0, size, mean, swapRB=True)
 """
 
-# Detecting Objects on Video with OpenCV deep learning library
+### Detecting Objects on Video with OpenCV deep learning library
 
 Algorithm:
 Reading input video --> Loading YOLO v3 Network -->
@@ -52,7 +52,7 @@ Parameters for cv2.VideoWriter():
     isColor	- If it True, the encoder will expect and encode colour frames.
 """
 
-# Detecting Objects in Real Time with OpenCV deep learning library
+### Detecting Objects in Real Time with OpenCV deep learning library
 
 Algorithm:
 Reading stream video from camera --> Loading YOLO v3 Network -->
