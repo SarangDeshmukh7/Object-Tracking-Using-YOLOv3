@@ -3,6 +3,9 @@
 
 <img
 src = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRBHC8oSbf3Jq0MDoLV1PVfhrFVVPN-ptjAdQ&usqp=CAU" /> 
+
+## Refer my blog for detail explanation
+#### (YOLO : Real Time Object Detection)[https://capablemachine.com/2020/07/21/yolo-model/]
 ### Detecting Objects on Image with OpenCV deep learning library
 
 Algorithm:
