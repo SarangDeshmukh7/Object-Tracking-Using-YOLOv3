@@ -16,8 +16,8 @@ Reading RGB image --> Getting Blob --> Loading YOLO v3 Network -->
 Result:
 Window with Detected Objects, Bounding Boxes and Labels
 
-"""
-Some comments
+
+#### Some comments
 
 With OpenCV function 'cv2.dnn.blobFromImage' we get 4-dimensional
 so called 'blob' from input image after mean subtraction,
@@ -27,7 +27,7 @@ normalizing, and RB channels swapping. Resulted shape has:
  - width
  - height
 E.G.: blob = cv2.dnn.blobFromImage(image, scalefactor=1.0, size, mean, swapRB=True)
-"""
+
 
 ### Detecting Objects on Video with OpenCV deep learning library
 
@@ -41,8 +41,8 @@ Reading input video --> Loading YOLO v3 Network -->
 Result:
 New video file with Detected Objects, Bounding Boxes and Labels
 
-"""
-Some comments
+
+#### Some comments
 
 What is a FOURCC?
     FOURCC is short for "four character code" - an identifier for a video codec,
@@ -56,7 +56,7 @@ Parameters for cv2.VideoWriter():
     fps	- Frame rate of the created video.
     frameSize - Size of the video frames.
     isColor	- If it True, the encoder will expect and encode colour frames.
-"""
+
 
 ### Detecting Objects in Real Time with OpenCV deep learning library
 
@@ -71,8 +71,7 @@ Result:
 Window with Detected Objects, Bounding Boxes and Labels in Real Time
 
 
-"""
-Some comments
+#### Some comments
 
 cv2.VideoCapture(0)
 
@@ -80,4 +79,4 @@ To capture video, it is needed to create VideoCapture object.
 Its argument can be camera's index or name of video file.
 Camera index is usually 0 for built-in one.
 Try to select other cameras by passing 1, 2, 3, etc.
-"""
+
