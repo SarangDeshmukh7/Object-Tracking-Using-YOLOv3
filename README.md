@@ -2,7 +2,7 @@
 
 
 <img
-src = "https://i2.wp.com/kobiso.github.io/assets/images/yolo/yolo%20model.png?w=750&ssl=1" width = "500" height ="380"/> <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTI3SklnN7cfvB3d_VNBN-Y86Cp9b13PoOdNg&usqp=CAU"/>
+src = "https://i2.wp.com/kobiso.github.io/assets/images/yolo/yolo%20model.png?w=750&ssl=1" width = "400" height ="280"/> 
 ### Detecting Objects on Image with OpenCV deep learning library
 
 Algorithm:
