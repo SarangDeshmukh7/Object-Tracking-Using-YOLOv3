@@ -1,4 +1,4 @@
-# Object-Tracking-using-YOLOv3
+# Object Tracking using YOLOv3
 
 
 <img
