@@ -14,7 +14,7 @@ Reading RGB image --> Getting Blob --> Loading YOLO v3 Network -->
 --> Non-maximum Suppression --> Drawing Bounding Boxes with Labels
 
 Result:
-Window with Detected Objects, Bounding Boxes and Labels
+Window with Detected Objects, Bounding Boxes and Labels.
 
 
 #### Some comments
