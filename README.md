@@ -39,7 +39,7 @@ Reading input video --> Loading YOLO v3 Network -->
 --> Writing processed frames
 
 Result:
-New video file with Detected Objects, Bounding Boxes and Labels
+New video file with Detected Objects, Bounding Boxes and Labels.
 
 
 #### Some comments
