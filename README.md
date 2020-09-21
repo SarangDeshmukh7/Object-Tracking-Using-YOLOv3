@@ -68,7 +68,7 @@ Reading stream video from camera --> Loading YOLO v3 Network -->
 --> Showing processed frames in OpenCV Window
 
 Result:
-Window with Detected Objects, Bounding Boxes and Labels in Real Time
+Window with Detected Objects, Bounding Boxes and Labels in Real Time.
 
 
 #### Some comments
