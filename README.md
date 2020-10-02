@@ -9,9 +9,9 @@ src = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRBHC8oSbf3Jq0MDoL
 ### Detecting Objects on Image with OpenCV deep learning library
 
 Algorithm:
-Reading RGB image --> Getting Blob --> Loading YOLO v3 Network -->
+<code>Reading RGB image --> Getting Blob --> Loading YOLO v3 Network -->
 --> Implementing Forward Pass --> Getting Bounding Boxes -->
---> Non-maximum Suppression --> Drawing Bounding Boxes with Labels
+--> Non-maximum Suppression --> Drawing Bounding Boxes with Labels</code>
 
 Result:
 Window with Detected Objects, Bounding Boxes and Labels.
