@@ -8,7 +8,7 @@ src = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRBHC8oSbf3Jq0MDoL
 ## 👉 [YOLO : Real Time Object Detection](https://capablemachine.com/2020/07/21/yolo-model/)
 ### Detecting Objects on Image with OpenCV deep learning library
 
-Algorithm:
+##### Algorithm:
 <code>Reading RGB image --> Getting Blob --> Loading YOLO v3 Network -->
 --> Implementing Forward Pass --> Getting Bounding Boxes -->
 --> Non-maximum Suppression --> Drawing Bounding Boxes with Labels</code>
@@ -31,12 +31,12 @@ E.G.: blob = cv2.dnn.blobFromImage(image, scalefactor=1.0, size, mean, swapRB=Tr
 
 ### Detecting Objects on Video with OpenCV deep learning library
 
-Algorithm:
-Reading input video --> Loading YOLO v3 Network -->
+##### Algorithm:
+<code>Reading input video --> Loading YOLO v3 Network -->
 --> Reading frames in the loop --> Getting blob from the frame -->
 --> Implementing Forward Pass --> Getting Bounding Boxes -->
 --> Non-maximum Suppression --> Drawing Bounding Boxes with Labels -->
---> Writing processed frames
+--> Writing processed frames</code>
 
 Result:
 New video file with Detected Objects, Bounding Boxes and Labels.
@@ -60,12 +60,12 @@ Parameters for cv2.VideoWriter():
 
 ### Detecting Objects in Real Time with OpenCV deep learning library
 
-Algorithm:
-Reading stream video from camera --> Loading YOLO v3 Network -->
+##### Algorithm:
+<code>Reading stream video from camera --> Loading YOLO v3 Network -->
 --> Reading frames in the loop --> Getting blob from the frame -->
 --> Implementing Forward Pass --> Getting Bounding Boxes -->
 --> Non-maximum Suppression --> Drawing Bounding Boxes with Labels -->
---> Showing processed frames in OpenCV Window
+--> Showing processed frames in OpenCV Window</code>
 
 Result:
 Window with Detected Objects, Bounding Boxes and Labels in Real Time.
