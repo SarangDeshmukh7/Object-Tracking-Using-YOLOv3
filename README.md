@@ -2,7 +2,7 @@
 
 
 ## Refer my blog for detail explanation
-## 👉 [YOLO : Real Time Object Detection](https://capablemachine.com/2020/07/21/yolo-model/)
+### 👉 [YOLO : Real Time Object Detection](https://capablemachine.com/2020/07/21/yolo-model/)
 ### Detecting Objects on Image with OpenCV deep learning library
 
 ##### Algorithm:
