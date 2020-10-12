@@ -1,11 +1,10 @@
 # Object Tracking using YOLOv3
 
 
-## Refer my blog for detail explanation
-### 👉 [YOLO : Real Time Object Detection](https://capablemachine.com/2020/07/21/yolo-model/)
-### Detecting Objects on Image with OpenCV deep learning library
+### Refer my blog for detail explanation 👉 [YOLO : Real Time Object Detection](https://capablemachine.com/2020/07/21/yolo-model/)
+#### Detecting Objects on Image with OpenCV deep learning library
 
-##### Algorithm:
+###### Algorithm:
 <code>Reading RGB image --> Getting Blob --> Loading YOLO v3 Network -->
 --> Implementing Forward Pass --> Getting Bounding Boxes -->
 --> Non-maximum Suppression --> Drawing Bounding Boxes with Labels</code>
@@ -14,7 +13,7 @@ Result:
 Window with Detected Objects, Bounding Boxes and Labels.
 
 
-#### Some comments
+##### Some comments
 
 With OpenCV function 'cv2.dnn.blobFromImage' we get 4-dimensional
 so called 'blob' from input image after mean subtraction,
@@ -26,9 +25,9 @@ normalizing, and RB channels swapping. Resulted shape has:
 E.G.: blob = cv2.dnn.blobFromImage(image, scalefactor=1.0, size, mean, swapRB=True)
 
 
-### Detecting Objects on Video with OpenCV deep learning library
+#### Detecting Objects on Video with OpenCV deep learning library
 
-##### Algorithm:
+###### Algorithm:
 <code>Reading input video --> Loading YOLO v3 Network -->
 --> Reading frames in the loop --> Getting blob from the frame -->
 --> Implementing Forward Pass --> Getting Bounding Boxes -->
@@ -39,7 +38,7 @@ Result:
 New video file with Detected Objects, Bounding Boxes and Labels.
 
 
-#### Some comments
+###### Some comments
 
 What is a FOURCC?
     FOURCC is short for "four character code" - an identifier for a video codec,
@@ -55,9 +54,9 @@ Parameters for cv2.VideoWriter():
     isColor	- If it True, the encoder will expect and encode colour frames.
 
 
-### Detecting Objects in Real Time with OpenCV deep learning library
+#### Detecting Objects in Real Time with OpenCV deep learning library
 
-##### Algorithm:
+###### Algorithm:
 <code>Reading stream video from camera --> Loading YOLO v3 Network -->
 --> Reading frames in the loop --> Getting blob from the frame -->
 --> Implementing Forward Pass --> Getting Bounding Boxes -->
@@ -68,7 +67,7 @@ Result:
 Window with Detected Objects, Bounding Boxes and Labels in Real Time.
 
 
-#### Some comments
+##### Some comments
 
 cv2.VideoCapture(0)
 
