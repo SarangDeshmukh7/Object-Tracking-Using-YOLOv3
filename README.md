@@ -13,7 +13,7 @@ Result:
 Window with Detected Objects, Bounding Boxes and Labels.
 
 
-##### Some comments
+###### Some comments
 
 With OpenCV function 'cv2.dnn.blobFromImage' we get 4-dimensional
 so called 'blob' from input image after mean subtraction,
@@ -67,7 +67,7 @@ Result:
 Window with Detected Objects, Bounding Boxes and Labels in Real Time.
 
 
-##### Some comments
+###### Some comments
 
 cv2.VideoCapture(0)
 
