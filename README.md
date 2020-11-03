@@ -5,7 +5,7 @@
 #### Detecting Objects on Image with OpenCV deep learning library
 
 ###### Algorithm:
-*<code>Reading RGB image --> Getting Blob --> Loading YOLO v3 Network -->
+<code>Reading RGB image --> Getting Blob --> Loading YOLO v3 Network -->
 --> Implementing Forward Pass --> Getting Bounding Boxes -->
 --> Non-maximum Suppression --> Drawing Bounding Boxes with Labels</code>
 
