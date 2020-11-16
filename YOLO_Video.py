@@ -36,10 +36,7 @@ Loading YOLO v3 network
 
 # Loading COCO class labels from file
 # Opening file
-# Pay attention! If you're using Windows, yours path might looks like:
-# r'yolo-coco-data\coco.names'
-# or:
-# 'yolo-coco-data\\coco.names'
+
 with open('yolo-coco-data/coco.names') as f:
     # Getting labels reading every line
     # and putting them into the list
@@ -52,12 +49,7 @@ with open('yolo-coco-data/coco.names') as f:
 
 # Loading trained YOLO v3 Objects Detector
 # with the help of 'dnn' library from OpenCV
-# Pay attention! If you're using Windows, yours paths might look like:
-# r'yolo-coco-data\yolov3.cfg'
-# r'yolo-coco-data\yolov3.weights'
-# or:
-# 'yolo-coco-data\\yolov3.cfg'
-# 'yolo-coco-data\\yolov3.weights'
+'
 network = cv2.dnn.readNetFromDarknet('yolo-coco-data/yolov3.cfg',
                                      'yolo-coco-data/yolov3.weights')
 
@@ -73,9 +65,6 @@ layers_names_all = network.getLayerNames()
 layers_names_output = \
     [layers_names_all[i[0] - 1] for i in network.getUnconnectedOutLayers()]
 
-# # Check point
-# print()
-# print(layers_names_output)  # ['yolo_82', 'yolo_94', 'yolo_106']
 
 # Setting minimum probability to eliminate weak predictions
 probability_minimum = 0.5
@@ -140,8 +129,7 @@ while True:
     # The 'cv2.dnn.blobFromImage' function returns 4-dimensional blob from current
     # frame after mean subtraction, normalizing, and RB channels swapping
     # Resulted shape has number of frames, number of channels, width and height
-    # E.G.:
-    # blob = cv2.dnn.blobFromImage(image, scalefactor=1.0, size, mean, swapRB=True)
+
     blob = cv2.dnn.blobFromImage(frame, 1 / 255.0, (416, 416),
                                  swapRB=True, crop=False)
 
@@ -196,11 +184,7 @@ while True:
             # Getting value of probability for defined class
             confidence_current = scores[class_current]
 
-            # # Check point
-            # # Every 'detected_objects' numpy array has first 4 numbers with
-            # # bounding box coordinates and rest 80 with probabilities
-            #  # for every class
-            # print(detected_objects.shape)  # (85,)
+           
 
             # Eliminating weak predictions with minimum probability
             if confidence_current > probability_minimum:
@@ -242,7 +226,7 @@ while True:
 
     # It is needed to make sure that data type of the boxes is 'int'
     # and data type of the confidences is 'float'
-    # https://github.com/opencv/opencv/issues/12789
+  
     results = cv2.dnn.NMSBoxes(bounding_boxes, confidences,
                                probability_minimum, threshold)
 
@@ -269,10 +253,6 @@ while True:
             # Preparing colour for current bounding box
             # and converting from numpy array to list
             colour_box_current = colours[class_numbers[i]].tolist()
-
-            # # # Check point
-            # print(type(colour_box_current))  # <class 'list'>
-            # print(colour_box_current)  # [172 , 10, 127]
 
             # Drawing bounding box on the original current frame
             cv2.rectangle(frame, (x_min, y_min),
