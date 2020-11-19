@@ -76,6 +76,6 @@ Its argument can be camera's index or name of video file.
 Camera index is usually 0 for built-in one.
 Try to select other cameras by passing 1, 2, 3, etc.
 
-- Download the pre-trained YOLO v3 weights file from this link and place it in yolo-coco-data folder.
+- <code>$ Download the pre-trained YOLO v3 weights file from this link and place it in yolo-coco-data folder. </code>
 
 <code>$ wget https://pjreddie.com/media/files/yolov3.weights</code>
